@@ -10,7 +10,7 @@ const getFact = async () => {
     .then((data) => {
       printFact(data);
     })
-    .catch((error) => console.log(error));
+    .catch((error) => document.getElementById("text-content").innerHTML = error);
 };
 
 getFact();
